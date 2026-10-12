@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-12",
+  "source_chat": "Ecological Information Overview",
+  "original_git_repository": false,
+  "files": [
+    {
+      "original": "EIRKB_README.md",
+      "destination": "EIRKB/README.md",
+      "bytes": 40475,
+      "sha256": "1165df5483a9fee131117f505cbff6b987785e639b12949c5ac2599ab3101cdd"
+    },
+    {
+      "original": "MASTER_history_theory_ecological_information_v0.md",
+      "destination": "EIRKB/MASTER_history_theory_ecological_information.md",
+      "bytes": 55265,
+      "sha256": "5d7d51bb6a5969f489c9b3ccdb9ef7c24c99e150a22fb996fdcd74a5371a81fe"
+    },
+    {
+      "original": "ecological_information_complete_reference_register_V0.xlsx",
+      "destination": "EIRKB/registers/ecological_information_complete_reference_register_V0.xlsx",
+      "bytes": 63340,
+      "sha256": "a43d1c226b8cc339ca8a69c3925a41c7f13140748a6b339781233d81dca093be"
+    },
+    {
+      "original": "ecological_information_complete_reference_register_v0.1.xlsx",
+      "destination": "EIRKB/registers/ecological_information_complete_reference_register_v0.1.xlsx",
+      "bytes": 164778,
+      "sha256": "77e62ef177ee175eb1e9af082e0c56744735516264b1a1ca083aa4d73f61eaaa"
+    },
+    {
+      "original": "EII Ecological Indicator Inventory.md",
+      "destination": "EII/EII.md",
+      "bytes": 25685,
+      "sha256": "47f7098f999cbb2570464d198793a11b0624386ee9b43fad0a2e9edd3451d547"
+    }
+  ]
+}
