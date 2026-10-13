@@ -58,9 +58,17 @@ Its current documentation defines scope and a proposed development
 architecture. A populated reference inventory and database have not
 yet been implemented.
 
+### GISDS — GIS and cartography data-source catalogue
+
+GISDS catalogues GIS, cartography and Earth-observation sources, including
+platform capabilities, analytical download routes, access conditions and
+interpretation limits. Its current Markdown register contains 22 resources
+and a proposed dataset-level metadata schema. Database implementation and
+cross-project integrations remain future work.
+
 ## Repository boundaries
 
-EIRKB, EII and AMRKB are independent sibling repositories.
+EIRKB, EII, AMRKB and GISDS are independent sibling repositories.
 
 This umbrella contains domain documentation, a project catalogue,
 coordination instructions and the historical reorganisation record.
