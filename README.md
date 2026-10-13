@@ -66,9 +66,15 @@ interpretation limits. Its current Markdown register contains 22 resources
 and a proposed dataset-level metadata schema. Database implementation and
 cross-project integrations remain future work.
 
+### PBCKA
+
+PBCKA is a newly scaffolded independent catalogue project. Its full name,
+research scope and catalogue structure remain to be defined. No catalogue
+entries or database implementation have been added yet.
+
 ## Repository boundaries
 
-EIRKB, EII, AMRKB and GISDS are independent sibling repositories.
+EIRKB, EII, AMRKB, GISDS and PBCKA are independent sibling repositories.
 
 This umbrella contains domain documentation, a project catalogue,
 coordination instructions and the historical reorganisation record.
