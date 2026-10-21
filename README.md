@@ -47,11 +47,11 @@ interpretations remain provisional.
 The [EIRKB repository](https://github.com/ecological-interaction/EIRKB) is
 maintained independently in the Ecological Interaction GitHub organisation.
 The [EIRKB research website](https://ecological-interaction.github.io/information/EIRKB/)
-provides the introduction, History and Theory document and Reference Register.
+is published and provides the introduction, History and Theory document and
+Reference Register.
 The central website configuration publishes approved commit
 `bbc7c0e755a2504a450272691aed6741af5aa6a7`, rather than following later
-research edits automatically. Live availability was not independently
-confirmed during this catalogue review.
+research edits automatically.
 
 The current project README uses “Ecological Information Research Knowledge Base”.
 Its citation metadata and published introduction retain “Ecological Information
@@ -122,11 +122,10 @@ implementation and cross-project integrations remain future work.
 
 ### PBCKA
 
-PBCKA is a newly scaffolded independent catalogue project. Its full name,
+PBCKA is a newly scaffolded catalogue project. Its full name,
 research scope and catalogue structure remain to be defined. No catalogue
-entries or database implementation have been added yet. It is a local Git
-repository with no remote configured; no public repository or academic
-website link is assigned here.
+entries or database implementation have been added yet. No public repository
+or academic website link is assigned here.
 
 ### Proposed and developing research directions
 
@@ -140,7 +139,8 @@ separate definition before they join the current repository catalogue.
 
 ## Repository boundaries
 
-EIRKB, EII, AMRKB, GISDS and PBCKA are independent sibling repositories.
+EIRKB, EII, AMRKB and GISDS are independent sibling repositories.
+PBCKA is a developing catalogue project.
 
 This umbrella contains layer documentation, a project catalogue,
 coordination instructions and the historical reorganisation record.
@@ -156,8 +156,9 @@ This is a research direction, not an implemented federation service.
 
 The central MkDocs website publishes approved versions of research
 documentation rather than maintaining independently edited academic copies.
-EIRKB already uses a commit-pinned, checksum-verified import. Publication of
-this umbrella and other projects remains a subsequent step.
+EIRKB already uses a commit-pinned, checksum-verified import. This Information
+umbrella is being prepared for publication through the same approach.
+Publication of other projects remains a subsequent step.
 
 The containing `ecological-information/` directory is an ordinary
 organisational directory.
@@ -240,9 +241,10 @@ or replace project-level attribution.
 Licensing and further publication decisions remain project-specific. EIRKB
 and EII already contain citation metadata; GISDS and PBCKA document citation
 and licensing decisions as pending. This umbrella has a configured remote at
-[Jonathan-Minchin/ecological-information](https://github.com/Jonathan-Minchin/ecological-information).
-Its current GitHub access and the pushed status of its two later catalogue
-commits remain unverified. A configured remote is not evidence of publication.
+[ecological-interaction/ecological-information](https://github.com/ecological-interaction/ecological-information).
+The public source repository is anonymously accessible. The Information
+umbrella website integration is prepared locally for review; it has not yet
+been deployed. EIRKB's existing publication remains separate.
 
 ## Historical reorganisation
 
