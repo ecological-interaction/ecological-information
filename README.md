@@ -173,6 +173,8 @@ filesystem-relative links to sibling repositories are required.
 The [Database Reference Methodology (DRM)](DRM/README.md) introduces the
 shared methodology under development for independently maintained databases.
 It does not yet provide a detailed specification or certify conformance.
+The DRM README also provides a plain-language glossary and a proposed conceptual
+diagram, separating current guidance from first-version questions for review.
 
 ![Federated knowledge systems architecture showing independent research databases and their proposed relationships](assets/diagrams/federated-knowledge-systems.png)
 
