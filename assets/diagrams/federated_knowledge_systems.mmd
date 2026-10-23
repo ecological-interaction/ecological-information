@@ -1,0 +1,79 @@
+%% Authoritative diagram source. Layout hints support deterministic SVG generation.
+%% @canvas 1536 1120
+%% @box IRKB 40 24 1456 120 synthesis
+%% @box DRM 40 180 1456 100 federation
+%% @region DATABASES 20 305 1496 490 neutral
+%% @group KNOWLEDGE 40 325 720 340 knowledge
+%% @box EIRKB 60 390 335 112 knowledgecard
+%% @box SSKB 410 390 330 112 knowledgecard
+%% @box DPRKB 60 525 335 112 knowledgecard
+%% @box AMRKB 410 525 330 112 knowledgecard
+%% @group SOURCES 780 325 716 340 sources
+%% @box EII 800 390 676 76 sourcecard
+%% @box GISDS 800 480 676 76 sourcecard
+%% @box OSDS 800 570 676 76 sourcecard
+%% @box PBCKA 40 695 1456 80 neutral
+%% @group APPLICATIONS 40 835 1456 180 application
+%% @box INTELLIGENCE 60 925 335 66 applicationcard
+%% @box DECISION 420 925 335 66 applicationcard
+%% @box PLACE 780 925 335 66 applicationcard
+%% @box TECHNOLOGY 1140 925 335 66 applicationcard
+%% @note 768 1055 Autonomous databases; conceptual relationships, not a claim of implemented integrations.
+%% @legend 768 1088 Database cards: solid = published research; dashed = developing or proposed. Publication is not scientific verification.
+flowchart TB
+    IRKB["IRKB — Interdisciplinary Research Knowledge Base<br/>Comparative synthesis and interdisciplinary research · developing"]
+    DRM["DRM — Database Reference Methodology<br/>Shared identities · Classifications and mappings · Relationships · Provenance"]
+    subgraph DATABASES[" "]
+        direction TB
+        subgraph KNOWLEDGE["Research knowledge bases"]
+            direction TB
+            EIRKB["EIRKB<br/>Ecological Information<br/>Research Knowledge Base<br/>Published research"]
+            SSKB["SSKB<br/>Systems Science and SES<br/>Developing direction"]
+            DPRKB["DPRKB<br/>Design Practice Research<br/>Developing direction"]
+            AMRKB["AMRKB<br/>Agricultural Modes<br/>Reference Knowledge Base<br/>Developing project"]
+            EIRKB ~~~ SSKB
+            DPRKB ~~~ AMRKB
+        end
+        subgraph SOURCES["Scientific and geographic information"]
+            direction TB
+            EII["EII — Ecological Indicator Inventory<br/>Published research catalogue"]
+            GISDS["GISDS — GIS and Remote Sensing Database Sources<br/>Published resource catalogue"]
+            OSDS["OSDS — Observational Systems and Data Sources<br/>Published candidate-source catalogue"]
+            EII ~~~ GISDS ~~~ OSDS
+        end
+        PBCKA["PBCKA<br/>Research scope pending — no disciplinary grouping assigned<br/>Developing project"]
+        KNOWLEDGE ~~~ SOURCES
+        SOURCES ~~~ PBCKA
+    end
+    subgraph APPLICATIONS["Analysis, intelligence and applications<br/>Emerging uses — not an operational analytical platform"]
+        direction LR
+        INTELLIGENCE["Ecological<br/>intelligence"]
+        DECISION["Decision-support<br/>systems"]
+        PLACE["Place-based<br/>interpretation"]
+        TECHNOLOGY["Technology and<br/>design choice"]
+        INTELLIGENCE ~~~ DECISION ~~~ PLACE ~~~ TECHNOLOGY
+    end
+    IRKB <--> DRM
+    DRM <--> DATABASES
+    DATABASES <--> APPLICATIONS
+    classDef synthesis fill:#cce3f9,stroke:#173b6b,stroke-width:2px,color:#15243d;
+    classDef federation fill:#e1daf0,stroke:#574087,stroke-width:2px,color:#29223e;
+    classDef knowledge fill:#e1f0e6,stroke:#41744d,stroke-width:2px,color:#203d29;
+    classDef knowledgecard fill:#f0f7f2,stroke:#41744d,stroke-width:1.4px,color:#172b24;
+    classDef sources fill:#feeec9,stroke:#a16a16,stroke-width:2px,color:#543a13;
+    classDef sourcecard fill:#fef6e3,stroke:#a16a16,stroke-width:1.4px,color:#302b20;
+    classDef application fill:#eaedf1,stroke:#7c8c9d,stroke-width:2px,color:#25334a;
+    classDef applicationcard fill:#f5f6f8,stroke:#9ba8b6,stroke-width:1.2px,color:#25334a;
+    classDef neutral fill:#f8f9fa,stroke:#99a4b0,stroke-width:1.2px,color:#3a4656;
+    classDef developing stroke-dasharray:6 4;
+    class IRKB synthesis;
+    class DRM federation;
+    class KNOWLEDGE knowledge;
+    class EIRKB,SSKB,DPRKB,AMRKB knowledgecard;
+    class SOURCES sources;
+    class EII,GISDS,OSDS sourcecard;
+    class PBCKA neutral;
+    class APPLICATIONS application;
+    class INTELLIGENCE,DECISION,PLACE,TECHNOLOGY applicationcard;
+    class IRKB,DRM,SSKB,DPRKB,AMRKB,PBCKA developing;
+    style DATABASES fill:none,stroke:#d5dce4,stroke-dasharray:2 5
